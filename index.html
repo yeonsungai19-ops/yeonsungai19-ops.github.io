@@ -35,6 +35,9 @@
     .game-thumb { display: block; width: 100%; height: auto; border-radius: .45rem; margin-bottom: .9rem; }
     .play { font-weight: 700; text-underline-offset: .2em; }
     .game-heading { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: .5rem 1rem; }
+    .music-grid { grid-template-columns: repeat(auto-fit, minmax(min(100%, 350px), 1fr)); }
+    .music-cover { display: block; width: 100%; height: auto; border-radius: .5rem; margin-bottom: 1rem; }
+    .music-player { display: block; width: 100%; height: 180px; border: 0; border-radius: .5rem; margin-bottom: .75rem; background: #201c19; }
     footer { background: #e7eee2; padding: 1.25rem 0; }
     @media (max-width: 650px) { .hero .wrap { grid-template-columns: 1fr; } .route { max-width: 280px; } }
   </style>
@@ -182,13 +185,6 @@
       <h2 id="project-title">창작 프로젝트</h2>
       <p>완성한 작업과 제작 과정은 분야별로 이곳에 올릴 예정입니다.</p>
       <div class="grid">
-        <article id="music">
-          <p class="eyebrow">02 · MUSIC</p>
-          <h3>Suno 음악</h3>
-          <p>Suno로 만든 곡과 각 곡에 담고 싶었던 분위기를 소개합니다.</p>
-          <span class="status">공개 예정</span>
-          <!-- 공개 후 Suno 듣기 링크를 추가하세요. -->
-        </article>
         <article id="twin">
           <p class="eyebrow">03 · DIGITAL TWIN</p>
           <h3>디지털 트윈</h3>
@@ -209,6 +205,41 @@
       <p class="eyebrow">TRAVEL NOTES</p>
       <h2 id="travel-title">여행 기록</h2>
       <p>여행에서 만난 풍경과 오래 기억하고 싶은 순간을 사진과 글로 남길 예정입니다.</p>
+    </section>
+    <section class="wrap travel" id="music" aria-labelledby="music-title">
+      <p class="eyebrow">SUNO · MUSIC</p>
+      <h2 id="music-title">가을을 담은 두 곡</h2>
+      <p>Suno로 만든 음악을 아래 재생 버튼으로 들어보세요.</p>
+      <div class="grid music-grid">
+        <article>
+          <svg class="music-cover" viewBox="0 0 480 180" aria-hidden="true" focusable="false">
+            <rect width="480" height="180" fill="#253b42"/>
+            <circle cx="333" cy="56" r="31" fill="#f5ba76"/>
+            <path d="M0 100 75 54l73 42 64-48 85 56 90-42 93 38v80H0Z" fill="#935843"/>
+            <path d="M0 115Q116 90 231 116T480 109v71H0Z" fill="#334c51"/>
+            <path d="M309 116h49m-63 13h78m-91 15h103m-77 15h58" fill="none" stroke="#f5ba76" stroke-width="3" stroke-linecap="round"/>
+            <path d="M44 118V74m-19 32 19-42 19 42M95 114V85m-14 20 14-32 14 32" fill="#22383e" stroke="#22383e" stroke-width="4"/>
+          </svg>
+          <h3>Autumn Reflections</h3>
+          <iframe class="music-player" title="Autumn Reflections 재생" src="https://suno.com/embed/8f0a7e26-c02d-484a-adcf-e4179e0d5202" loading="lazy" allow="autoplay; encrypted-media"></iframe>
+          <a class="play" href="https://suno.com/s/YIMIjnfJIOQZ09aG" target="_blank" rel="noopener noreferrer">Suno에서 듣기 ↗</a>
+        </article>
+        <article>
+          <svg class="music-cover" viewBox="0 0 480 180" aria-hidden="true" focusable="false">
+            <rect width="480" height="180" fill="#a6cfdb"/>
+            <circle cx="363" cy="47" r="28" fill="#fff2b4"/>
+            <path d="M0 104Q96 33 193 101 306 40 480 94v86H0Z" fill="#be633e"/>
+            <path d="M0 124Q103 76 236 114 358 77 480 112v68H0Z" fill="#dca64e"/>
+            <path d="M175 180q24-35 74-48 37-10 25-23 34 17 2 36-24 15-30 35Z" fill="#fff0c9"/>
+            <path d="M62 149V99m349 50V90" stroke="#784536" stroke-width="6"/>
+            <circle cx="62" cy="87" r="28" fill="#a64431"/>
+            <circle cx="412" cy="79" r="28" fill="#e89533"/>
+          </svg>
+          <h3>행복이 물드는 가을 여행</h3>
+          <iframe class="music-player" title="행복이 물드는 가을 여행 재생" src="https://suno.com/embed/11cd7c74-a83a-4ee0-9945-c7c084d7c25c" loading="lazy" allow="autoplay; encrypted-media"></iframe>
+          <a class="play" href="https://suno.com/s/arODoc7l2WgC4Dpr" target="_blank" rel="noopener noreferrer">Suno에서 듣기 ↗</a>
+        </article>
+      </div>
     </section>
   </main>
   <footer><div class="wrap"><a href="#top">맨 위로 ↑</a></div></footer>
