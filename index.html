@@ -1,3 +1,115 @@
-<html>
-<h1>인덱스</h1>
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="여행을 좋아하는 창작자의 AI 게임, 음악, 디지털 트윈, 영상 포트폴리오">
+  <title>여행과 AI 창작 기록 | 포트폴리오</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #f7f5ed; color: #172f29; font: 1rem/1.65 system-ui, sans-serif; }
+    a { color: inherit; }
+    a:focus-visible { outline: 3px solid #ae5419; outline-offset: 5px; }
+    .wrap { width: min(1100px, 92%); margin-inline: auto; }
+    header { padding: 1rem 0; }
+    header .wrap, nav ul { display: flex; align-items: center; flex-wrap: wrap; gap: .65rem 1.25rem; }
+    header .wrap { justify-content: space-between; }
+    nav ul { list-style: none; padding: 0; margin: 0; }
+    nav a { display: inline-block; padding-block: .35rem; text-underline-offset: .2em; }
+    .hero { background: #153b32; color: #fffdf5; padding: clamp(3rem, 9vw, 7rem) 0; }
+    .hero .wrap { display: grid; grid-template-columns: 3fr 2fr; gap: 2rem; align-items: center; }
+    .eyebrow { font-size: .82rem; font-weight: 750; letter-spacing: .16em; }
+    .hero .eyebrow { color: #ffd294; }
+    h1, h2, h3, p { margin: 0 0 .65em; }
+    h1 { font-size: clamp(2.15rem, 6vw, 4.7rem); line-height: 1.15; letter-spacing: -.06em; }
+    h2 { font-size: clamp(1.75rem, 4vw, 2.6rem); letter-spacing: -.045em; }
+    .hero p { max-width: 38ch; }
+    .button { display: inline-block; margin-top: .7rem; padding: .65rem 1.1rem; border-radius: .45rem; background: #ffd294; color: #17332a; text-decoration: none; font-weight: 750; }
+    .route { width: 100%; height: auto; }
+    section.wrap { padding-block: 3.2rem; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 235px), 1fr)); gap: 1rem; margin-top: 1.5rem; }
+    article { background: #fffdf8; border: 1px solid #d8ded3; border-radius: .85rem; padding: 1.3rem; scroll-margin-top: 1rem; }
+    article .eyebrow { color: #53674e; }
+    .status { display: inline-block; background: #e7eee2; border-radius: 1rem; padding: .15rem .65rem; font-size: .83rem; font-weight: 650; }
+    .travel { border-top: 1px solid #d8ded3; }
+    footer { background: #e7eee2; padding: 1.25rem 0; }
+    @media (max-width: 650px) { .hero .wrap { grid-template-columns: 1fr; } .route { max-width: 280px; } }
+  </style>
+</head>
+<body id="top">
+  <header>
+    <div class="wrap">
+      <strong>여행과 AI 창작 기록</strong>
+      <nav aria-label="주 메뉴">
+        <ul>
+          <li><a href="#games">게임</a></li>
+          <li><a href="#music">음악</a></li>
+          <li><a href="#twin">디지털 트윈</a></li>
+          <li><a href="#video">영상</a></li>
+          <li><a href="#travel">여행</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="hero" aria-labelledby="intro">
+      <div class="wrap">
+        <div>
+          <p class="eyebrow">TRAVEL NOTES · AI PORTFOLIO</p>
+          <h1 id="intro">여행을 좋아하고,<br>AI로 만들어요.</h1>
+          <p>낯선 곳을 둘러보는 걸 좋아합니다. AI로 게임과 음악, 디지털 트윈, 영상을 만들며 배운 것과 완성한 작업을 이곳에 기록합니다.</p>
+          <a class="button" href="#projects">프로젝트 둘러보기</a>
+        </div>
+        <svg class="route" viewBox="0 0 400 240" aria-hidden="true" focusable="false">
+          <rect x="1" y="1" width="398" height="238" rx="18" fill="#1c473c" stroke="#759887"/>
+          <path d="M1 80H399M1 160H399M100 1V239M200 1V239M300 1V239" stroke="#547c6a" opacity=".55"/>
+          <path d="M46 187C100 202 89 103 157 111S199 164 247 141 283 47 350 47" fill="none" stroke="#ffd294" stroke-width="3" stroke-dasharray="6 7"/>
+          <circle cx="46" cy="187" r="8" fill="#ffd294"/>
+          <circle cx="350" cy="47" r="11" fill="#ffd294"/>
+          <circle cx="350" cy="47" r="4" fill="#153b32"/>
+        </svg>
+      </div>
+    </section>
+    <section class="wrap" id="projects" aria-labelledby="project-title">
+      <h2 id="project-title">창작 프로젝트</h2>
+      <p>완성한 작업과 제작 과정은 분야별로 이곳에 올릴 예정입니다.</p>
+      <div class="grid">
+        <article id="games">
+          <p class="eyebrow">01 · GAMES</p>
+          <h3>AI 게임</h3>
+          <p>AI를 활용해 만든 게임과 플레이 방법을 소개합니다.</p>
+          <span class="status">공개 예정</span>
+          <!-- 공개 후 플레이 링크를 추가하세요. -->
+        </article>
+        <article id="music">
+          <p class="eyebrow">02 · MUSIC</p>
+          <h3>Suno 음악</h3>
+          <p>Suno로 만든 곡과 각 곡에 담고 싶었던 분위기를 소개합니다.</p>
+          <span class="status">공개 예정</span>
+          <!-- 공개 후 Suno 듣기 링크를 추가하세요. -->
+        </article>
+        <article id="twin">
+          <p class="eyebrow">03 · DIGITAL TWIN</p>
+          <h3>디지털 트윈</h3>
+          <p>HeyGen 등을 활용한 디지털 트윈 실험과 시연 영상을 모읍니다.</p>
+          <span class="status">공개 예정</span>
+          <!-- 공개 후 시연 영상 링크를 추가하세요. -->
+        </article>
+        <article id="video">
+          <p class="eyebrow">04 · VIDEO</p>
+          <h3>유튜브 영상</h3>
+          <p>유튜브 채널에 올린 영상 중 소개하고 싶은 작업을 모읍니다.</p>
+          <span class="status">공개 예정</span>
+          <!-- 공개 후 채널과 대표 영상 링크를 추가하세요. -->
+        </article>
+      </div>
+    </section>
+    <section class="wrap travel" id="travel" aria-labelledby="travel-title">
+      <p class="eyebrow">TRAVEL NOTES</p>
+      <h2 id="travel-title">여행 기록</h2>
+      <p>여행에서 만난 풍경과 오래 기억하고 싶은 순간을 사진과 글로 남길 예정입니다.</p>
+    </section>
+  </main>
+  <footer><div class="wrap"><a href="#top">맨 위로 ↑</a></div></footer>
+</body>
 </html>
