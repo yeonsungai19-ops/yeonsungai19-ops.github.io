@@ -32,6 +32,9 @@
     article .eyebrow { color: #53674e; }
     .status { display: inline-block; background: #e7eee2; border-radius: 1rem; padding: .15rem .65rem; font-size: .83rem; font-weight: 650; }
     .travel { border-top: 1px solid #d8ded3; }
+    .game-thumb { display: block; width: 100%; height: auto; border-radius: .45rem; margin-bottom: .9rem; }
+    .play { font-weight: 700; text-underline-offset: .2em; }
+    .game-heading { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: .5rem 1rem; }
     footer { background: #e7eee2; padding: 1.25rem 0; }
     @media (max-width: 650px) { .hero .wrap { grid-template-columns: 1fr; } .route { max-width: 280px; } }
   </style>
@@ -70,17 +73,115 @@
         </svg>
       </div>
     </section>
-    <section class="wrap" id="projects" aria-labelledby="project-title">
+    <section class="wrap" id="games" aria-labelledby="games-title">
+      <div class="game-heading">
+        <h2 id="games-title">대표 AI 게임</h2>
+        <a class="play" href="/game/" aria-label="게임 더보기">더보기 →</a>
+      </div>
+      <p>세 가지 분위기로 즐기는 지뢰찾기입니다.</p>
+      <div class="grid">
+        <article>
+          <svg class="game-thumb" viewBox="0 0 320 168" aria-hidden="true" focusable="false">
+            <rect width="320" height="168" fill="#007d80"/>
+            <rect x="132" y="16" width="154" height="136" rx="4" fill="#fff"/>
+            <rect x="140" y="23" width="25" height="26" rx="1" fill="#c4c4c4"/>
+            <rect x="168" y="23" width="25" height="26" rx="1" fill="#c4c4c4"/>
+            <rect x="196" y="23" width="25" height="26" rx="1" fill="#c4c4c4"/>
+            <rect x="224" y="23" width="25" height="26" rx="1" fill="#c4c4c4"/>
+            <rect x="252" y="23" width="25" height="26" rx="1" fill="#c4c4c4"/>
+            <rect x="140" y="55" width="25" height="26" rx="1" fill="#c4c4c4"/>
+            <rect x="168" y="55" width="25" height="26" rx="1" fill="#c4c4c4"/>
+            <rect x="196" y="55" width="25" height="26" rx="1" fill="#c4c4c4"/>
+            <rect x="224" y="55" width="25" height="26" rx="1" fill="#c4c4c4"/>
+            <rect x="252" y="55" width="25" height="26" rx="1" fill="#c4c4c4"/>
+            <rect x="140" y="87" width="25" height="26" rx="1" fill="#c4c4c4"/>
+            <rect x="168" y="87" width="25" height="26" rx="1" fill="#c4c4c4"/>
+            <rect x="196" y="87" width="25" height="26" rx="1" fill="#c4c4c4"/>
+            <rect x="224" y="87" width="25" height="26" rx="1" fill="#c4c4c4"/>
+            <rect x="252" y="87" width="25" height="26" rx="1" fill="#c4c4c4"/>
+            <rect x="140" y="119" width="25" height="26" rx="1" fill="#c4c4c4"/>
+            <rect x="168" y="119" width="25" height="26" rx="1" fill="#c4c4c4"/>
+            <rect x="196" y="119" width="25" height="26" rx="1" fill="#c4c4c4"/>
+            <rect x="224" y="119" width="25" height="26" rx="1" fill="#c4c4c4"/>
+            <rect x="252" y="119" width="25" height="26" rx="1" fill="#c4c4c4"/>
+            <text x="152" y="42" fill="#183987" font-size="17" font-weight="700" text-anchor="middle">1</text>
+            <text x="208" y="106" fill="#183987" font-size="18" font-weight="700" text-anchor="middle">⚑</text>
+            <text x="76" y="104" fill="#fff" font-size="60" text-anchor="middle">▣</text>
+          </svg>
+          <h3>레트로 클래식</h3>
+          <p>윈도우 98을 닮은 회색 버튼과 클래식 지뢰찾기.</p>
+          <a class="play" href="/game/02.html" aria-label="레트로 클래식 플레이하기">플레이하기 →</a>
+        </article>
+        <article>
+          <svg class="game-thumb" viewBox="0 0 320 168" aria-hidden="true" focusable="false">
+            <rect width="320" height="168" fill="#f4e4f1"/>
+            <rect x="132" y="16" width="154" height="136" rx="9" fill="#fff"/>
+            <rect x="140" y="23" width="25" height="26" rx="6" fill="#dfd2f2"/>
+            <rect x="168" y="23" width="25" height="26" rx="6" fill="#dfd2f2"/>
+            <rect x="196" y="23" width="25" height="26" rx="6" fill="#dfd2f2"/>
+            <rect x="224" y="23" width="25" height="26" rx="6" fill="#dfd2f2"/>
+            <rect x="252" y="23" width="25" height="26" rx="6" fill="#dfd2f2"/>
+            <rect x="140" y="55" width="25" height="26" rx="6" fill="#dfd2f2"/>
+            <rect x="168" y="55" width="25" height="26" rx="6" fill="#dfd2f2"/>
+            <rect x="196" y="55" width="25" height="26" rx="6" fill="#dfd2f2"/>
+            <rect x="224" y="55" width="25" height="26" rx="6" fill="#dfd2f2"/>
+            <rect x="252" y="55" width="25" height="26" rx="6" fill="#dfd2f2"/>
+            <rect x="140" y="87" width="25" height="26" rx="6" fill="#dfd2f2"/>
+            <rect x="168" y="87" width="25" height="26" rx="6" fill="#dfd2f2"/>
+            <rect x="196" y="87" width="25" height="26" rx="6" fill="#dfd2f2"/>
+            <rect x="224" y="87" width="25" height="26" rx="6" fill="#dfd2f2"/>
+            <rect x="252" y="87" width="25" height="26" rx="6" fill="#dfd2f2"/>
+            <rect x="140" y="119" width="25" height="26" rx="6" fill="#dfd2f2"/>
+            <rect x="168" y="119" width="25" height="26" rx="6" fill="#dfd2f2"/>
+            <rect x="196" y="119" width="25" height="26" rx="6" fill="#dfd2f2"/>
+            <rect x="224" y="119" width="25" height="26" rx="6" fill="#dfd2f2"/>
+            <rect x="252" y="119" width="25" height="26" rx="6" fill="#dfd2f2"/>
+            <text x="152" y="42" fill="#773963" font-size="17" font-weight="700" text-anchor="middle">1</text>
+            <text x="208" y="106" fill="#773963" font-size="18" font-weight="700" text-anchor="middle">⚑</text>
+            <text x="76" y="104" fill="#773963" font-size="60" text-anchor="middle">✿</text>
+          </svg>
+          <h3>파스텔 가든</h3>
+          <p>라벤더색 보드에서 즐기는 부드러운 분위기의 지뢰찾기.</p>
+          <a class="play" href="/game/03.html" aria-label="파스텔 가든 플레이하기">플레이하기 →</a>
+        </article>
+        <article>
+          <svg class="game-thumb" viewBox="0 0 320 168" aria-hidden="true" focusable="false">
+            <rect width="320" height="168" fill="#e9dab7"/>
+            <rect x="132" y="16" width="154" height="136" rx="4" fill="#765f3f"/>
+            <rect x="140" y="23" width="25" height="26" rx="1" fill="#d4bf99"/>
+            <rect x="168" y="23" width="25" height="26" rx="1" fill="#d4bf99"/>
+            <rect x="196" y="23" width="25" height="26" rx="1" fill="#d4bf99"/>
+            <rect x="224" y="23" width="25" height="26" rx="1" fill="#d4bf99"/>
+            <rect x="252" y="23" width="25" height="26" rx="1" fill="#d4bf99"/>
+            <rect x="140" y="55" width="25" height="26" rx="1" fill="#d4bf99"/>
+            <rect x="168" y="55" width="25" height="26" rx="1" fill="#d4bf99"/>
+            <rect x="196" y="55" width="25" height="26" rx="1" fill="#d4bf99"/>
+            <rect x="224" y="55" width="25" height="26" rx="1" fill="#d4bf99"/>
+            <rect x="252" y="55" width="25" height="26" rx="1" fill="#d4bf99"/>
+            <rect x="140" y="87" width="25" height="26" rx="1" fill="#d4bf99"/>
+            <rect x="168" y="87" width="25" height="26" rx="1" fill="#d4bf99"/>
+            <rect x="196" y="87" width="25" height="26" rx="1" fill="#d4bf99"/>
+            <rect x="224" y="87" width="25" height="26" rx="1" fill="#d4bf99"/>
+            <rect x="252" y="87" width="25" height="26" rx="1" fill="#d4bf99"/>
+            <rect x="140" y="119" width="25" height="26" rx="1" fill="#d4bf99"/>
+            <rect x="168" y="119" width="25" height="26" rx="1" fill="#d4bf99"/>
+            <rect x="196" y="119" width="25" height="26" rx="1" fill="#d4bf99"/>
+            <rect x="224" y="119" width="25" height="26" rx="1" fill="#d4bf99"/>
+            <rect x="252" y="119" width="25" height="26" rx="1" fill="#d4bf99"/>
+            <text x="152" y="42" fill="#823e30" font-size="17" font-weight="700" text-anchor="middle">1</text>
+            <text x="208" y="106" fill="#823e30" font-size="18" font-weight="700" text-anchor="middle">⚑</text>
+            <text x="76" y="104" fill="#823e30" font-size="60" text-anchor="middle">⌕</text>
+          </svg>
+          <h3>탐정의 지뢰 수사</h3>
+          <p>빈티지 수사 기록을 펼치고 숨은 지뢰의 위치를 추리해 보세요.</p>
+          <a class="play" href="/game/04.html" aria-label="탐정의 지뢰 수사 플레이하기">플레이하기 →</a>
+        </article>
+      </div>
+    </section>
+    <section class="wrap travel" id="projects" aria-labelledby="project-title">
       <h2 id="project-title">창작 프로젝트</h2>
       <p>완성한 작업과 제작 과정은 분야별로 이곳에 올릴 예정입니다.</p>
       <div class="grid">
-        <article id="games">
-          <p class="eyebrow">01 · GAMES</p>
-          <h3>AI 게임</h3>
-          <p>AI를 활용해 만든 게임과 플레이 방법을 소개합니다.</p>
-          <span class="status">공개 예정</span>
-          <!-- 공개 후 플레이 링크를 추가하세요. -->
-        </article>
         <article id="music">
           <p class="eyebrow">02 · MUSIC</p>
           <h3>Suno 음악</h3>
